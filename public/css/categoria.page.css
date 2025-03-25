@@ -1,0 +1,95 @@
+header {
+	width: 300px;
+	height: 300px;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-right: 1px solid #999;
+	position: fixed;
+}
+header #siteMap {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+header a.backLink {
+	color: #999;
+	text-decoration: none;
+	margin-top: 10px;
+}
+header a#logo {
+	text-align: center;
+	align-items: center;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	text-decoration: none;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 48px;
+}
+main {
+	color: #999;
+	box-sizing: border-box;
+	padding: 20px;
+	float: right;
+	width: calc(100% - 310px);
+}
+main h1 {
+	color: #473826ff;
+}
+#items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.item {
+	width: 30%;
+	height: 300px;
+	margin: 1%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #999;
+	background-position: center;
+	background-position-y: -50px;
+	background-size: cover;
+	opacity: 0.9;
+}
+.item:hover {
+	opacity: 1;
+	transition: opacity 0.25s;
+}
+.item a {
+	display: block;
+	background: rgb(255, 255, 255, 0.6);
+	color: black;
+	height: 80%;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+.item {
+	transition: all 0.25s;
+}
+@media screen and (max-width: 576px) {
+	main {
+		width: 100%;
+	}
+	.item {
+		width: 100%;
+	}
+	header {
+		position: relative;
+		width: 100%;
+		font-size: 24px;
+	}
+}
