@@ -184,8 +184,8 @@ Para el envío de correos se utiliza un servidor SMTP. En el ejemplo se utiliza 
 - Importa el archivo **.sql** ubicado en la carpeta **DB**.
 - Actualiza los valores de conexión en el archivo **/app/dataSource/MysqlDataSource.php**:
 
-```php
-class MysqlDataSource implements IDataSource {
+  ```php
+  class MysqlDataSource implements IDataSource {
     private ?PDO $pdo = null;
     static public $instance = null;
 
@@ -196,8 +196,7 @@ class MysqlDataSource implements IDataSource {
         $pass = '';
         // ...
     }
-}
-
+  }
 
 # Puntos Clave del Desarrollo
 
